@@ -25,7 +25,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   framework while still following the best practices possible for
   accessibility and search-engine optimization.
 baseurl: "/watery" # the subpath of your site, e.g. /blog
-url: "https://github.com/deopark/watery" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://deopark.github.io"{{baseurl}} # the base hostname & protocol for your site, e.g. http://example.com
+deploy_url: ""
 repository: brennanbrown/watery
 twitter: brennankbrown
 github: brennanbrown
