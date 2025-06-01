@@ -1,6 +1,14 @@
 <header>
+    <!-- site variables -->
+    <div class="comment">
+        <p class="comment">baseurl: {{site.baseurl}}</p>
+        <p>url: {{site.url}}</p>
+        <p>url: {{page.url}}</p>
+
+    </div>
+
     <h1 id="title">
-        <a href="/">{{site.title}}</a>
+        <a href="{{site.url}}">{{site.title}}</a>
     </h1>
     <p id="description">
         {{site.description}}
