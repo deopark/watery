@@ -3,12 +3,12 @@
     <div class="comment">
         <p class="comment">baseurl: {{site.baseurl}}</p>
         <p>url: {{site.url}}</p>
-        <p>url: {{page.url}}</p>
+        <p>page.url: {{page.url}}</p>
 
     </div>
 
     <h1 id="title">
-        <a href="{{site.url}}">{{site.title}}</a>
+        <a href="{{site.url}}{{site.baseurl}}/">{{site.title}}</a>
     </h1>
     <p id="description">
         {{site.description}}
@@ -16,13 +16,13 @@
 
     <hr/>
     <nav id="navigation">
-        <a href="/">Home</a>
+        <a href="{{site.baseurl}}/">Home</a>
         /
         {% for page in site.pages %}
-            <a href="{{ page.url }}">{{page.title}}</a>
+            <a href="{{site.baseurl}}{{ page.url }}">{{page.title}}</a>
             /
         {% endfor %}
-        <a href="/feed.xml">RSS</a>
+        <a href="{{site.baseurl}}/feed.xml">RSS</a>
     </nav>
     <hr/>
 </header>
